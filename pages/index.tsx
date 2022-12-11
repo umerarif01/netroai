@@ -78,6 +78,7 @@ export default function Home() {
           </h1>
           <h1 className="text-white text-lg font-bold xl:text-2xl md:text-xl ">
             Let AI turn your imagination into reality
+            {process.env.NEXT_PUBLIC_OPENAI_API_KEY}
           </h1>
           <div
             className="flex w-full mt-5 rounded-full border-2 border-gray-600
