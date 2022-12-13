@@ -77,15 +77,15 @@ export default function Home() {
             Let AI turn your imagination into reality
           </h1>
           <div
-            className="flex w-full mt-5 rounded-full border-2 border-gray-600
-      py-3 px-5 items-center max-w-md sm:max-w-xl lg:max-w-2xl"
+            className="flex 2xl:w-[700px] md:w-[500px] mt-5 rounded-full border-2 border-gray-600
+      py-3 px-5 items-center"
           >
             <Search className="h-5 mr-3 text-purple-600" />
             <input
               type="text"
               onChange={(event) => setPrompt(event?.target.value)}
               className="bg-transparent text-white 
-      focus:outline-none flex-grow 1 font-semibold "
+      focus:outline-none flex grow font-semibold"
             />
 
             <select
