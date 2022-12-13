@@ -68,15 +68,12 @@ export default function Home() {
         />
       </Head>
 
-      <main className="">
-        <form
-          className="flex flex-col items-center mt-[300px]"
-          onSubmit={onSubmit}
-        >
+      <main className="flex h-screen">
+        <form className="flex flex-col items-center m-auto" onSubmit={onSubmit}>
           <h1 className="text-white text-6xl font-extrabold xl:text-8xl md:text-7xl ">
             NETRO<span className="text-purple-600">AI</span>
           </h1>
-          <h1 className="text-white text-lg font-bold xl:text-2xl md:text-xl ">
+          <h1 className="text-white text-lg font-bold xl:text-xl md:text-lg ">
             Let AI turn your imagination into reality
           </h1>
           <div
@@ -88,7 +85,7 @@ export default function Home() {
               type="text"
               onChange={(event) => setPrompt(event?.target.value)}
               className="bg-transparent text-white 
-      focus:outline-none flex-grow l font-semibold"
+      focus:outline-none flex-grow 1 font-semibold "
             />
 
             <select

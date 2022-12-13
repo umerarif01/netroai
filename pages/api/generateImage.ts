@@ -25,7 +25,7 @@ export default async function handler(
 
   try {
     const response = await openai.createImage({
-      prompt,
+      prompt: "Cat dancing in disco",
       n: 1,
       size: imageSize,
     });
