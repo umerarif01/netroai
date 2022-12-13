@@ -1,4 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Configuration, OpenAIApi } from "openai";
 
@@ -25,7 +24,7 @@ export default async function handler(
 
   try {
     const response = await openai.createImage({
-      prompt: "Cat dancing in disco",
+      prompt,
       n: 1,
       size: imageSize,
     });
